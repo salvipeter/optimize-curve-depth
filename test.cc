@@ -14,7 +14,7 @@ int main(int argc, char **argv) {
                {4.40015,  -1.41758,  1}
   };
   VectorVector dirs(5, {0, 0, 1});
-  optimize(curve, dirs, 100);
+  optimize(curve, dirs, 100, 1);
   for (const auto &cp : curve.cp)
     std::cout << cp.x << ' ' << cp.y << ' ' << cp.z << std::endl;
 }
